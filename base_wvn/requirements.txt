@@ -1,0 +1,17 @@
+kornia
+numpy
+numba
+neptune
+lightning
+opencv-python
+seaborn
+simple-parsing
+matplotlib
+pytictac
+scipy
+scikit-learn
+xformers
+torch_geometric
+prettytable
+termcolor
+
