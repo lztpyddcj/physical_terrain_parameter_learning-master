@@ -1,0 +1,7 @@
+NumPy 2.5.3; OpenCV 5.0.0
+Observation shape: (2, 50, 341)
+Visible centers: 4/6
+Pixel centers: [[220.0, 180.0], [420.0, 180.0], [220.0, 300.0], [420.0, 300.0]]
+Labeled pixels: 2500
+Label values: [0.10000000149011612, 0.30000001192092896, 0.6000000238418579, 0.800000011920929]
+All numerical checks passed. Output: /home/ubuntu/桌面/physical_terrain_parameter_learning-master/学习笔记/practice_output

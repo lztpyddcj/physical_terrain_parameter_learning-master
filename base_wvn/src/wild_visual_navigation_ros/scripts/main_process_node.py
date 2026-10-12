@@ -635,7 +635,8 @@ class MainProcess(RosNode):
 
             # Convert the numpy array to a ROS CompressedImage message
             last_image_np = cv2.cvtColor(last_image_np, cv2.COLOR_RGB2BGR)
-            img_msg = bridge.cv2_to_imgmsg(last_image_np, "bgr8")
+            img_msg = bridge.cv2_to_imgmsg(last_image_np)
+            img_msg.encoding = "bgr8"
 
         # calculate phy loss
         self.log("prediction_done", self.log_data["prediction_done"] + 1)

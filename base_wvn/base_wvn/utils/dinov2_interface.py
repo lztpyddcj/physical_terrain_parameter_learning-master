@@ -16,16 +16,16 @@ class Dinov2Interface:
         self._model_type = model_type
         # Initialize DINOv2
         if self._model_type == "vit_small":
-            self.model = torch.hub.load("facebookresearch/dinov2", "dinov2_vits14_reg")
+            self.model = torch.hub.load("facebookresearch/dinov2:e1277af2ba9496fbadf7aec6eba56e8d882d1e35", "dinov2_vits14_reg", skip_validation=True)
             self.embed_dim = 384
         elif self._model_type == "vit_base":
-            self.model = torch.hub.load("facebookresearch/dinov2", "dinov2_vitb14_reg")
+            self.model = torch.hub.load("facebookresearch/dinov2:e1277af2ba9496fbadf7aec6eba56e8d882d1e35", "dinov2_vitb14_reg", skip_validation=True)
             self.embed_dim = 768
         elif self._model_type == "vit_large":
-            self.model = torch.hub.load("facebookresearch/dinov2", "dinov2_vitl14_reg")
+            self.model = torch.hub.load("facebookresearch/dinov2:e1277af2ba9496fbadf7aec6eba56e8d882d1e35", "dinov2_vitl14_reg", skip_validation=True)
             self.embed_dim = 1024
         elif self._model_type == "vit_huge":
-            self.model = torch.hub.load("facebookresearch/dinov2", "dinov2_vitg14_reg")
+            self.model = torch.hub.load("facebookresearch/dinov2:e1277af2ba9496fbadf7aec6eba56e8d882d1e35", "dinov2_vitg14_reg", skip_validation=True)
             self.embed_dim = 1536
         self.patch_size = patch_size
         # Send to device
